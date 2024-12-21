@@ -1,0 +1,209 @@
+{% extends 'Nav.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/Home.css'%}">
+{% endblock css %}
+{% block middle_content %}
+<div id="middle">
+  <h1>
+    We only <span style="color: rgb(66, 228, 174);">teach</span><br>
+    <span>What we are really</span><br>
+    <span>really <i>good</i> at.</span>
+  </h1>
+  <a href="{% url 'myapp:course' %}"><button id="course_button">Check Courses-Make an Impact</button></a>
+  <div id="inside_div">
+    <h1>
+        Get ready to <span style="color:rgb(66, 228, 174) ;">acelerate your</span><br><span style="color:rgb(66, 228, 174) ;">career </span>
+        <span>with customized course </span><br><span>and leave your mark in the tech</span><br><span>industry</span>
+    </h1>
+  </div>
+</div>
+{% endblock middle_content %}
+
+{% block subscription %}
+<div id="sub">
+    <div class="subscriptions">
+        <h1 class="digits">25k+</h1>
+        <p class="media">students taught</p>
+    </div>
+    <div class="subscriptions">
+        <h1 class="digits">20+</h1>
+        <p class="media">Instructor</p>
+    </div>
+    <div class="subscriptions">
+        <h1 class="digits">431k+</h1>
+      <p class="media"> Youtube Subs</p>
+    </div>
+</div>
+{% endblock subscription %}
+
+{% block concepts %}
+<div id="concepts">
+  <h1>
+    <span >we do whatever it takes to help you</span><br>
+    <span style="color: rgb(66, 228, 174);">understand the concepts</span>
+  </h1>
+</div>
+{% endblock concepts %}
+
+{% block video %}
+<div id="video">
+  <iframe width="750" height="500" src="https://www.youtube.com/embed/60SRAWmMXyc" title="You Are Not Yet Ready | Placements | Open Source" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+  <button id="free_learning">Explore free learning</button>
+</div>
+{% endblock video  %}
+
+{% block courses %}
+<div id="">
+  <h1 id="course_heading">Courses Offered</h1>
+</div>
+<div id="courses">
+  <div class="first_row">
+    <img src="{% static 'images/firstphoto.webp' %}" class="img">
+    <div class="photos">
+      <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Front-End Domination:Create Anything With code</h5>
+      <p style="width:12vw;height: 5vh;background-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HINDI</p>
+      <div class="cont">
+        <p style="color: rgb(74, 189, 151);">Limited Time discount</p>
+        <h5>₹4999 <del>₹9999</del></h5>
+      </div>
+      <div id="cont1">
+        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
+      </div>
+    </div>
+    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
+
+  </div>
+  <div class="first_row">
+    <img src="{% static 'images/secondphoto.webp' %}" class="img">
+    <div class="photos">
+      <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Back-End Domination:Create Efficient Back-End</h5>
+      <p style="width:12vw;height: 5vh;background-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HINDI</p>
+      <div id="cont">
+        <p style="color: rgb(74, 189, 151);">Limited Time Discount</p>
+        <h5>₹5999 <del>₹11999</del></h5>
+      </div>
+      <div id="cont1">
+        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
+      </div>
+    </div>
+    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
+
+  </div>
+  <div class="first_row">
+    <img src="{% static 'images/thirdimage.webp' %}" class="img">
+    <div class="photos">
+      <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Aptitude & Reasoning</h5>
+      <p style="width:12vw;height: 5vh;background-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HINGLISH</p>
+      <div id="cont">
+        <p style="color: rgb(74, 189, 151);">Black Friday Sale</p>
+        <h5>₹999 <del>₹1500</del></h5>
+      </div>
+      <div id="cont1">
+        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
+      </div>
+    </div>
+    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
+
+  </div>
+  <div class="first_row">
+    <img src="{% static 'images/fourthimage.webp' %}" class="img">
+    <div class="photos">
+      <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Front-End Domination:Create Anything With code</h5>
+      <p style="width:12vw;height: 5vh;background-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HINGLISH</p>
+      <div id="cont">
+        <p style="color: rgb(74, 189, 151);">Limited Time Discount</p>
+        <h5>₹4999 <del>₹9999</del></h5>
+      </div>
+      <div id="cont1">
+        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
+      </div>
+    </div>
+  </div>
+  <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; margin-top: 74vh;margin-left: -270px; text-align:center; color:black;"><h3><center>View Details</center></h3></div>
+
+</div>
+<div id="courses1">
+  <div class="first_row">
+    <img src="{% static 'images/fifthimage.webp' %}" class="img">
+    <div class="photos" style="width:20vw;height: 20vh;float: left;">
+      <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Front-End Domination:Create Anything With code</h5>
+      <p style="width:12vw;height: 5vh;background-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HINDI</p>
+      <div class="cont">
+        <p style="color:rgb(74, 189, 151);">Black friday Sale</p>
+        <h5>₹2499 <del>₹3500</del></h5>
+      </div>
+      <div id="cont1">
+        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">29% OFF</p>
+      </div>
+    </div>
+  </div>
+  <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:-7vh;margin-left: 0.5vw; color:black;"><h3><center>View Detail</center></h3></div>
+  </div>
+ 
+
+</div>
+<div id="companies">
+  <h1>Top <span style="color: rgb(66, 228, 174);">companies </span>our 
+  students <br><span> working with</span></h>
+</div>
+<div id="images">
+  <img style="width:900px;" src="{% static 'images/netlink.webp' %}" alt="">
+  <a href="{% url 'myapp:course' %}"><button id="explore_course">Explore courses</button></a>
+</div> 
+{% endblock courses  %}
+
+{% block foot %}
+<div id="foot">
+  <hr>
+  <div class="foot_div">
+     <img style="width: 4vh; padding-top:20vh;margin-right: 1vh;" src="{% static 'images/sheryians.png'%}" alt="">
+     <p>Let's connect with our socials</p>
+     <span><i class="fa-brands fa-instagram" style="color: white;"></i></span>
+     <span><i class="fa-brands fa-linkedin" style="color: white;"></i></span>
+     <span><i class="fa-brands fa-discord" style="color: white;"></i></span> 
+     <span><i class="fa-brands fa-youtube" style="color: white;"></i></span>
+     <span><i class="fa-brands fa-twitter" style="color: white;"></i></span>
+  </div>
+  <div class="foot_div">
+      <h1 class="foot_heading">COMPANY</h1><br><br>
+      <p>About Us</p>
+      <br>
+      <p>Support</p>
+      <br>
+      <p>Privacy Policy</p>
+      <br>
+      <p>Terms and Condition</p>
+      <br>
+      <p>Pricing and Refund</p>
+      <br>
+      <p>Hire From Us</p>
+      <br>
+      <p>Bug Bounty</p>
+      <br>
+  </div>
+  <div class="foot_div">
+      <h1 class="foot_heading">COMMUNITY</h1>
+      <br>
+      <p>Inertia</p>
+      <br>
+      <p>Discord</p>
+  </div>
+  <div class="foot_div">
+      <h1 class="foot_heading">Get In Touch</h1>
+      <br>
+      <p>+91 8109161752,</p>
+      <br>
+      <p>+91 9691778470</p>
+      <br>
+      <p>hello@sheryians.com</p><br>
+      <pre><p>23-b,Indrapuri Sector C,</p>
+<p>23-b,Indrapuri Sector C,</p></pre>
+  </div>
+</div>
+<footer>
+  <hr><hr><center><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright ©️ 2024 Sheryians Pvt.Ltd</p></center>
+  <center><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AllRights Reserved</p></center>
+</footer>
+{% endblock foot %}

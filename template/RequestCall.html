@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/Request.css' %}">
+</head>
+<body>
+    <div id="request_form">
+        <h2 id="request_heading">Requestcall a callback</h2>
+        <h4>Fill the form below to request a callback <br>from our team</h3>
+         <label for="Name">Name</label><br>
+         <input type="text" placeholder="Name" class="request_inputs"><br>
+         <label for="">Phone</label><br>
+         <select name="Phone" id="phone" placeholder="Phone" class="request_inputs">
+            <option>Phone</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>China</option>
+            <option>Australia</option>
+            <option>Japan</option>
+         </select><br>
+        <label for="" id="date_time">Select Date and Time</label><br>
+        <input type="text" value="20-12-2024 13:30" class="request_inputs"><br>
+        <button type="submit" class="request_inputs" style="background-color: rgb(78, 192, 154);">Submit</button>
+    </div>
+</body>
+</html>

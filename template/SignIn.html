@@ -1,0 +1,33 @@
+{% extends 'Nav.html' %}
+{% load static %}
+{% block title%}
+Sign In
+{% endblock title%}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/Signin.css' %}">
+{% endblock css %}
+
+{% block middle_content %}
+<div class="container">
+
+    <div id="heading">
+      <h1 id="signin_form">Sign In</h1>
+    <a href="" id="phone_anchor">Phone</a>
+    <a href="{% url 'myapp:mail' %}" id="email_anchor">Email</a>
+   </div> 
+    <form>
+      <div class="form-group">
+        <label for="phone" required><p>Mobile number</p></label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+      </div>
+    <div class="or">or</div><br><br>
+
+    <button class="google-btn">
+      <img style="width:15px;" src="{% static 'images/GoogleLogoicon.png' %}" alt="Google Logo">
+      Continue with Google
+    </button>
+<br><br>
+    <button class="google-btn">Create a New Account</button>
+  </div>
+{% endblock middle_content %}

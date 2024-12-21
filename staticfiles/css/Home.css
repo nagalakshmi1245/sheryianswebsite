@@ -1,0 +1,166 @@
+#middle{
+    width: 100%;
+    height: 250px;
+    margin-top: 8%;
+    margin-left: 20vw;
+    text-align: center;
+}
+#middle>h1{
+    font-weight: bold;
+    font-size: 5.5vw;
+    color: white;
+    padding-top: 1px;
+    text-align: center;
+    margin-left: -50vw;
+}
+#course_button,#free_learning,#explore_course{
+    width:350px;
+    height: 40px; 
+    background-color: rgb(74, 189, 151);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px;
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: -50vw;
+}
+#inside_div{
+    width: 300px;
+    color: white;
+    text-align: left;
+    font-size: 7px;
+    margin-top: -10%;
+    margin-left: 50%;
+}
+#sub{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top:300px;
+    left: 23%;
+}
+.subscriptions{
+    width:200px ;
+    height: 100px;
+    color: white;
+    float: left;
+    padding-left: -100px;
+    padding-right: 30px;
+}
+.digits{
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.media{
+    font-size: 20px;
+    text-align: center;
+}
+#concepts{
+    width: 720px;
+    height: 300px;
+    color: white;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    left: 20%;
+    font-size:20px ;
+}
+#video{
+    position: relative;
+    top: 100px;
+    left:20%;
+    text-align: center;
+    width: fit-content;
+}
+
+#free_learning{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 5vw;
+}
+#courses{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    position: relative;
+    top: 100px;
+    left: -2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#courses1{
+    margin-left: 1%;
+    margin-top: 13vh;
+}
+.img{
+    width:20vw;
+    height: 50vh;
+    border-radius: 1vh;
+}
+#course_heading{
+    font-size: 5vh;
+    /* padding-bottom: 60px; */
+    padding-left: 70px;
+    margin-top: 25vw;
+}
+.first_row{
+    width:20vw;
+    height: 80vh;
+    /* margin: 100px; */
+    padding: 1vh;
+
+}
+.photos{
+    width: 20vw;
+    height: 20vh;
+    font-size: 2vh;
+    background-color: rgba(175, 175, 175, 0.354);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #courses  .cont{
+    float: left;
+ }
+ #courses .cont1{
+    float: right;
+
+ }
+ #courses1{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    position: relative;
+    top: 100px;
+    left: 4%;
+   
+}
+#companies{
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-size: 25px;
+   margin-top: 50vh;
+}
+#images{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    left:150px;
+}
+#explore_course{
+    width: 250px;
+    height: 45px;
+    position: relative;
+    top: 80px;
+    left:100px;
+    bottom: 170px;
+}
+.course_content{
+    font-size: 10px;
+} 

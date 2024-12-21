@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: NeueMachina;
+}
+body{
+    background-color:black;
+    overflow-x: hidden;
+    color: white;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    height:20px;
+    margin-top: -30px;
+    margin-left: 5vw;
+}
+a{
+    text-decoration: none; 
+    color: white;
+    font-size: 15px;
+}
+.anchortag{
+    position: relative;
+    left:10px;
+    padding-left: 45px;
+    padding-top: 0px;
+}
+#sheryians{
+    padding-left: 60px;
+}
+#lion_img{
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+#home{
+    padding-left: 20%;
+}
+#signin{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    background-color:rgb(74, 189, 151);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+@font-face{
+    font-family: NeueMachina;
+    src: url(../font/NeueMachina-Light.otf);
+}
+.foot_div{
+    width: 300px;
+    height: 500px;
+    float: left;
+    position: relative;
+    left: 10%;
+}
+.foot_heading{
+    font-size: 20px;
+    padding-top: 20vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#foot{
+    width: 100%;
+    height: 500px;
+}
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,77 @@
+
+.container {
+  background-color: black;
+    padding: 10vh;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    left:28%;
+  }
+  #heading {
+    position: relative;
+    left: 2%;
+    margin-bottom: 20px;
+    padding-left: -20px;
+  }
+  #signin_form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .form-group {
+    margin-bottom: 3vw;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1vh;
+    margin-top:3vw;
+  }
+  #email{
+    margin-top: 5vh;
+  }
+  #email_input{
+    margin-top: 0px;
+  }
+  #email_anchor,#phone_anchor{
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  input {
+    width: 50vh;
+    padding: 2vh;
+    border:1px solid gray; 
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: inset 1px 1px 5px gray;
+    color: white;
+  }
+  #continue {
+    background-color:aquamarine;
+    padding: 3vh;
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+    margin-left: 20%;
+    
+  }
+
+  .or {
+    text-align: center;
+    margin-left:-70vw;
+  }
+
+  .google-btn {
+    width: 25vw;
+    height: 10vh;
+    background-color:black;
+    font-size: 10;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .google-btn img {
+    margin-right: 5px;
+  }
