@@ -10,19 +10,14 @@ Sign In
 
 {% block middle_content %}
 <div class="container">
-
     <div id="heading">
       <h1 id="signin_form">Sign In</h1>
-    <a href="" id="phone_anchor">Phone</a>
-    <a href="{% url 'myapp:mail' %}" id="email_anchor">Email</a>
    </div> 
-    <form>
-      <div class="form-group">
-        <label for="phone" required><p>Mobile number</p></label>
-        <input type="text" id="phone" placeholder="Enter your phone number">
-      </div>
+    <form action="" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" id="continue">Continue</button>
     <div class="or">or</div><br><br>
-
     <button class="google-btn">
       <img style="width:15px;" src="{% static 'images/GoogleLogoIcon.png' %}" alt="Google Logo">
       Continue with Google
@@ -30,4 +25,5 @@ Sign In
 <br><br>
     <button class="google-btn">Create a New Account</button>
   </div>
+  </form>
 {% endblock middle_content %}

@@ -18,97 +18,29 @@ Course
 <div id="">
   <p id="work_heading">Course which do work</p>
 </div>
-<div id="courses">
-  <div class="first_row">
-    <img src="{% static 'images/firstphoto.webp' %}" class="img">
-    <div class="photos">
-      <h5>Front-End Domination:Create Anything With code</h5>
-      <p style="width:12vw;height: 5vh;background-color: black;">HINDI</p>
-      <div class="cont">
-        <p style="color: rgb(74, 189, 151);">Limited Time discount</p>
-        <h5>₹4999 <del>₹9999</del></h5>
-      </div>
-      <div id="cont1">
-        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
-      </div>
+<div class="container">
+  {% for i in course %}
+  <div class="card" style="float: left;margin-left: 50px;margin-top: 10vh;margin-bottom: 10vw;">
+    <div class="image-container">
+      <img src="{{ i.image.url }}" alt="" style="width: 350px;height: 350px; border-radius: 15px;">
     </div>
-    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
-
-  </div>
-  <div class="first_row">
-    <img src="{% static 'images/secondphoto.webp' %}" class="img">
-    <div class="photos">
-      <h5>Back-End Domination:Create Efficient Back-End</h5>
-      <p style="width:12vw;height: 5vh;background-color: black;">HINDI</p>
-      <div id="cont">
-        <p style="color: rgb(74, 189, 151);">Limited Time Discount</p>
-        <h5>₹5999 <del>₹11999</del></h5>
-      </div>
-      <div id="cont1">
-        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
-      </div>
-    </div>
-    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
-
-  </div>
-  <div class="first_row">
-    <img src="{% static 'images/thirdimage.webp' %}" class="img">
-    <div class="photos">
-      <h5>Aptitude & Reasoning</h5>
-      <p style="width:12vw;height: 5vh;background-color: black;">HINGLISH</p>
-      <div id="cont">
-        <p style="color: rgb(74, 189, 151);">Black Friday Sale</p>
-        <h5>₹999 <del>₹1500</del></h5>
-      </div>
-      <div id="cont1">
-        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
-      </div>
-    </div>
-    <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh; color:black;"><h3><center>View Details</center></h3></div>
-
-  </div>
-  <div class="first_row">
-    <img src="{% static 'images/fourthimage.webp' %}" class="img">
-    <div class="photos">
-      <h5>Front-End Domination:Create Anything With code</h5>
-      <p style="width:12vw;height: 5vh;background-color: black;">HINGLISH</p>
-      <div id="cont">
-        <p style="color: rgb(74, 189, 151);">Limited Time Discount</p>
-        <h5>₹4999 <del>₹9999</del></h5>
-      </div>
-      <div id="cont1">
-        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">50% OFF</p>
-      </div>
+    <div class="card-content">
+      <h3 style="font-size: 2vw;">{{ i.name }}</h3>
+      <p class="language" style="background-color:rgba(128, 128, 128) ;width: fit-content;border: 2px;">{{ i.language }}</p>
+      <p class="offer" style="color: rgb(74, 189, 151)">Black Friday Sale</p>
+      <p class="price">
+        {{ i.price }}<del class="old-price">₹3500</del> <span class="discount" style="float: right;background-color: rgba(128, 128, 128, 0.477);">29% OFF</span>
+      </p>
+      <button style="width: 300px;height: 50px;background-color:rgb(74, 189, 151);margin-left: 2vw;margin-top: 2vw;border-radius: 10px;outline: none;"><a href="{% url 'myapp:livecourse' %}" class="view-details" style="color: black;font-size:2vw;">View Details</a></button>
     </div>
   </div>
-  <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; margin-top: 74vh;margin-left: -270px; text-align:center; color:black;"><h3><center>View Details</center></h3></div>
-
-</div>
-<div id="courses1">
-  <div class="first_row">
-    <img src="{% static 'images/fifthimage.webp' %}" class="img">
-    <div class="photos" style="width:20vw;height: 200px;float: left;">
-      <h5>Front-End Domination:Create Anything With code</h5>
-      <p style="width:12vw;height: 5vh;background-color: black;">HINDI</p>
-      <div class="cont">
-        <p style="color:rgb(74, 189, 151);">Black friday Sale</p>
-        <h5>₹2499 <del>₹3500</del></h5>
-      </div>
-      <div id="cont1">
-        <p style="width:10vw;height:5vh;background-color:white; color:black;float: right;">29% OFF</p>
-      </div>
-    </div>
-  </div>
-  <div style="width:20vw;height: 7vh;background-color:rgb(74, 189, 151);border-radius: 5px; text-align:center;margin-top:3vh;margin-left: 1vw; color:black;"><h3><center>View Detail</center></h3></div>
-  </div>
- 
-
+  {% endfor %}
 </div>
 {% endblock course_details %}
 
 {% block foot %}
+<hr>
 <div id="foot" style="margin-top: 50vh;">
-  <hr>
   <div class="foot_div">
      <img style="width: 4vh; padding-top:20vh;margin-right: 1vh;" src="{% static 'images/sheryians.png'%}" alt="">
      <p>Let's connect with our socials</p>
@@ -155,7 +87,8 @@ Course
   </div>
 </div>
 <footer>
-  <hr><hr><center><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright ©️ 2024 Sheryians Pvt.Ltd</p></center>
+  <hr>
+  <center><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright ©️ 2024 Sheryians Pvt.Ltd</p></center>
   <center><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AllRights Reserved</p></center>
 </footer>
 {% endblock foot %}

@@ -1,49 +1,139 @@
 {% extends 'Nav.html' %}
 {% load static %}
 
-{% block title%}
-Kodr | Sheryians
-{% endblock title%}
+{% block title %}
+LiveCourse
+{% endblock title %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/BootCamp.css' %}">
+<link rel="stylesheet" href="{% static 'css/LiveCourse.css' %}">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #ffffff;
+    }
+    .container{
+        font-size: 3vh;
+        padding: 20px;
+        text-align: left;
+    }
+    .header {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .tag {
+        background-color: rgba(37, 35, 35, 0.683);
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 2vh;
+        margin-left: -3vh;
+        margin-right: 2vh;
+    }
+    .price {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    .old-price {
+        text-decoration: line-through;
+        color: #888;
+        margin-left: 10px;
+    }
+    .button {
+        background-color:rgb(60, 169, 107);
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        margin: 20px 0;
+    }
+    .button:hover {
+        background-color: #019875;
+    }
+    .details {
+        margin-top: 30px;
+    }
+    .details>p {
+        margin: 10px 0;
+    }
+    #image{
+        width: 560px;
+        height: 317px;
+    }
+    .highlight-text {
+        text-align: center;
+        margin-top: 200px;
+    }
+    .highlight-text h1 {
+        font-size: 7vw;
+        font-weight: bold;
+        background: linear-gradient(to right, red,orange,rgb(215, 215, 56),red);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left:-125% ;
+        max-width: 800px;
+        height: 200px;
+    }
+    .highlight-text p {
+        font-size:4vw;
+        margin-top: -50px;
+        margin-left: -120%;
+    }
+</style>
 {% endblock css %}
 
 {% block course_details %}
-<div id="left_heading"><h1 id="camp">6 months In House <br>BootCamp <br>programme-Kodr.</h1>
-        <div style=" width:20vw;height: 5vh; background-color: rgb(93, 95, 96);border-radius:1vh ; float: left;font-size:3vh;padding-left:2px;margin-top: 2vh;">starts on :11Nov 2024</div>
-        <div style=" width:20vw;height: 5vh; background-color: rgb(93, 95, 96);border-radius: 1vh;float: left;margin-left: 5vw;font-size:3vh;padding-left:1vh;margin-top: 2vh;">Placement Assistance</div>
-        <div  id='price' style="margin-top: 15vh;"><h1 style="font-size: 7vh;">Price <span style="color:rgb(66, 228, 174) ;font-size: 5vh;">₹ 59000</span><sub style="font-size: 3vh;">[50,000+18% Gst]</sub></h1></div>
-        <div style="width: 15vw;height: 7vh;background-color:seagreen ; margin-top: 10vh; text-align: center;filter: blur(0.2vh);padding-top: 2vh;font-size: 2vh;border-radius: 1vh;"><h1>Seats Are Full</h1></div>
+<div id="left_heading">
+    <div class="container">
+        <h1 class="header">Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude</h1>
+        <div class="tags">
+            <span class="tag">MERN Stack</span>
+            <span class="tag">DSA With JS</span>
+            <span class="tag">AI Powered</span>
+            <span class="tag">Placement Focus</span>
+            <span class="tag">Aptitude</span>
+        </div>
+        <div class="price">
+            Price:<span style="color:rgb(100, 194, 141)">₹4999</span> <span class="old-price">₹8499</span> (+ GST)
+        </div>
+        <p style="color:rgb(100, 194, 141);">Early Bird Offer Applied!</p>
+        <a href="{% url 'myapp:signin' %}"><button class="button">Buy Now</button></a>
+        <p>Next Batch Starts on <strong>27th January</strong></p>
+    </div>
 </div>
-<div id="right_video"><iframe width="625" height="351" src="https://www.youtube.com/embed/pOGLAlGCKFE" title="This Bootcamp Will Change Your Life: Kodr x Sheryians !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><br>
-<div><h1 style="font-size: 7vw;padding-left: 300px; margin-top: 100vh; margin-left: -30vh;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">we believe in, <br><span style="color: rgb(66, 228, 174);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Consistency.</span> No shortcuts.</h1></div>
+<div id="right_video">
+    <div id="image">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GfAaK8dLtYs" title="Get JOB READY in 6 Months with AI-Powered Cohort and Expert Guidance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="details">
+        <p><strong>Language:</strong> Hindi</p>
+        <p><strong>Schedule:</strong> Mon - Sat (8:30 PM)</p>
+        <p><strong>Certificate:</strong> YES</p>
+        <p><strong>Total Content:</strong> 200+ Hours</p>
+        <div class="highlight-text">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Zero To Job-Ready</h1>
+            <p>In 5 Months*</p>
+        </div>
+    </div>
 </div>
-<div style="margin-left: 8vh;">
-        <div style=" width:30vw;height: 10vh; background-color: rgb(93, 95, 96);border-radius: 5vw; float: left;font-size:20px;padding-left:2vh;margin-top: 2vh;margin-left: 3vw;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">MERN Stack </h1>
-        </div>
-        <div style=" width:50vw;height: 10vh; background-color: rgb(93, 95, 96);border-radius: 5vw; float: left;font-size:20px;padding-left:2vh;margin-top: 2vh;margin-left: 3vw;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Data Structures & Algorithm 🗿</h1>
-        </div>
-        <div style=" width:30vw;height: 10vh; background-color: rgb(93, 95, 96);border-radius: 5vw; float: left;font-size:20px;padding-left:2vh;margin-top: 2vh;margin-left: 3vw;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">DBMS-SQL 🤟</h1>
-        </div>
-        <div style=" width:30vw;height: 10vh; background-color: rgb(93, 95, 96);border-radius: 5vw; float: left;font-size:20px;padding-left:2vh;margin-top: 2vh;margin-left: 3vw;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CORE CS Subjects </h1>
-        </div>
-        <div style=" width:40vw;height: 10vh; background-color: rgb(93, 95, 96);float: left;font-size:20px;padding-left:2vh;margin-top: 2vh; margin-left: 3vw;border-radius:5vw;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Placement Assistance 💰</h1>
-        </div>
+<div>
+    <img src="{% static 'images/jspic.webp' %}" alt="" style="width: 1000px;height: 700px;margin-left: 150px;margin-top: 300px;">
 </div>
-<div style="margin-top: 30vw;margin-left: 5vw;">
-        <h1 style="font-size: 15vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 22vh;">Non-Stop <br><span style="color: rgb(66, 228, 174);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">5 Hours</span><br>Coding <sub style="font-size: 50px;">[Everyday]</sub>
-        </h1>
-        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Monday To Saturday. 11:00 AM To 4:00PM.</h1>
-</div>
-<div style="margin-left: 5vw;margin-top: 20vw;margin-bottom: 20vw;">
-        <h1 style="font-size: 12vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Dominate.</h1>
-        <h3 style="color:rgb(93, 95, 96) ;font-size: 5vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">From start to victory</h3>
+<div style="margin-left: 10vw;margin-top: 10vw; margin-bottom: 20vw;">
+    <h1 style="font-size: 14vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Syllabus</h1>
+    <h3 style="color:rgb(93, 95, 96) ;font-size: 4vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Dominate. From start to victory.</h3>
 </div>
 <hr><br>
     <div>
